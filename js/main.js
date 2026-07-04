@@ -76,15 +76,15 @@
   var processData = [
     {
       title: "Initial diagnosis",
-      body: "<p>We walk through your current grant workflow end to end — discovery, triage, drafting, tracking, whatever your team actually does — and diagnose the main friction points together.</p><p>By the end, you'll have a shared map of where the hours go and which steps are worth automating first.</p>",
-      tag: "You stay in the room the whole time",
+      body: "<p>We map your grant workflow from end to end: finding opportunities, triage, drafting, tracking, whatever your team actually does. We do it together and mark where the hours go.</p><p>You leave with a shared picture of what to automate first.</p>",
+      tag: "You're in every meeting",
       slide: "slides/climate-resolve-1.jpg",
       fallback: "slides/climate-resolve-1.svg",
       alt: "Climate Resolve presentation slide 1: Initial diagnosis"
     },
     {
       title: "Wireframe & PRD",
-      body: "<p>We develop a software wireframe and create a PRD, then walk you through exactly how data flows between your tools — so nothing is mysterious before we build.</p><p>We recommend several options and automation tools for you to review. Nothing moves forward until you give your stamp of approval.</p>",
+      body: "<p>We sketch the automation and write up how data moves between your tools, so nothing is a surprise when build starts.</p><p>We bring you a few tool options. Nothing moves until you've signed off.</p>",
       tag: "You approve before we build",
       slide: "slides/climate-resolve-2.jpg",
       fallback: "slides/climate-resolve-2.svg",
@@ -92,16 +92,16 @@
     },
     {
       title: "Build, build, build",
-      body: "<p>Once you've signed off, we build. We meet with you at whatever cadence you prefer — weekly, biweekly, monthly — to demo progress, answer questions, and adjust if priorities shift.</p><p>You're never wondering what's happening behind the scenes. You see working pieces as they land.</p>",
-      tag: "Your cadence, your check-ins",
+      body: "<p>Once you say go, we build. We check in as often as you want (weekly, biweekly, monthly) to show progress, answer questions, and change course if priorities shift.</p><p>You're not guessing what's happening. You see pieces working as they land.</p>",
+      tag: "Check-ins on your schedule",
       slide: "slides/climate-resolve-3.jpg",
       fallback: "slides/climate-resolve-3.svg",
       alt: "Climate Resolve presentation slide 3: Build phase"
     },
     {
       title: "Hand-off",
-      body: "<p>We document the entire process and create a hand-off doc with troubleshooting guidance, so your team can maintain the system confidently.</p><p>And if something ends up awry down the road, we're always there. This isn't a one-and-done delivery — it's a partnership.</p>",
-      tag: "Full docs + ongoing support",
+      body: "<p>We write everything down: how the system works, how to fix common problems, so your team can run it.</p><p>If something breaks later, we're still around. This isn't a handoff and goodbye.</p>",
+      tag: "Docs plus help when you need it",
       slide: "slides/climate-resolve-4.jpg",
       fallback: "slides/climate-resolve-4.svg",
       alt: "Climate Resolve presentation slide 4: Hand-off"
