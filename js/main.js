@@ -109,7 +109,6 @@
   ];
   var processIdx = 0;
   var tabBtns = document.querySelectorAll(".process-step-btn");
-  var thumbBtns = document.querySelectorAll(".process-thumb");
   var titleEl = document.getElementById("process-title");
   var bodyEl = document.getElementById("process-body");
   var tagEl = document.getElementById("process-tag");
@@ -141,18 +140,12 @@
       btn.setAttribute("aria-selected", on ? "true" : "false");
       btn.tabIndex = on ? 0 : -1;
     });
-    thumbBtns.forEach(function(btn, j){
-      btn.setAttribute("aria-selected", j === i ? "true" : "false");
-    });
     if (panelEl) panelEl.setAttribute("aria-labelledby", "process-tab-" + i);
     if (prevBtn) prevBtn.disabled = i === 0;
     if (nextBtn) nextBtn.disabled = i === processData.length - 1;
   }
 
   tabBtns.forEach(function(btn){
-    btn.addEventListener("click", function(){ setProcessStep(parseInt(btn.dataset.step, 10)); });
-  });
-  thumbBtns.forEach(function(btn){
     btn.addEventListener("click", function(){ setProcessStep(parseInt(btn.dataset.step, 10)); });
   });
   if (prevBtn) prevBtn.addEventListener("click", function(){ setProcessStep(processIdx - 1); });

@@ -59,7 +59,7 @@
   .stat .num,.fact .num{font-family:var(--font-display);font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink)}
   .stat .num em{font-style:normal;color:var(--accent)}
   .lbl,.label-text{font-size:var(--text-label);color:var(--ink-soft);line-height:1.45;margin-top:2px}
-  .meta,.race-caption,.steps-hint,.calc-note,.process-hint,.demo-caption,.process-slide-caption,.process-slide-counter,.pace,.count-label,.calc-out .sub{
+  .meta,.race-caption,.steps-hint,.calc-note,.demo-caption,.process-slide-caption,.process-slide-counter,.pace,.count-label,.calc-out .sub{
     font-size:var(--text-meta);color:var(--ink-soft);line-height:1.5;
   }
   code{
@@ -416,19 +416,6 @@
   .process-slide-nav button:hover{border-color:var(--accent);color:var(--accent)}
   .process-slide-nav button:disabled{opacity:.4;cursor:default}
   .process-slide-caption{margin-top:8px;padding:0 4px}
-  .process-thumbs{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px;
-  }
-  .process-thumb{
-    aspect-ratio:16/9;border-radius:8px;overflow:hidden;
-    border:2px solid transparent;cursor:pointer;padding:0;background:none;
-    transition:border-color .18s,opacity .18s;
-  }
-  .process-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-  .process-thumb[aria-selected="true"]{border-color:var(--accent)}
-  .process-thumb:not([aria-selected="true"]){opacity:.55}
-  .process-thumb:not([aria-selected="true"]):hover{opacity:.85}
-  .process-hint{margin-top:18px}
 
   /* ---------- contact ---------- */
   .contact{border-bottom:none;padding-bottom:64px}
@@ -469,6 +456,6 @@
     .nav a.active::before{display:none}
     .sidebar .spacer,.sidebar-note{display:none}
     .sidebar-cta{margin:0;padding:8px 14px;font-size:13.5px;white-space:nowrap}
-    .race,.story-grid,.steps,.calc,.team-grid,.fact-row,.process-panel,.process-thumbs{grid-template-columns:1fr}
+    .race,.story-grid,.steps,.calc,.team-grid,.fact-row,.process-panel{grid-template-columns:1fr}
     section{padding:56px 20px}
   }
