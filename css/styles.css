@@ -257,9 +257,9 @@
     background:var(--sage);border:1px solid var(--sage-line);
     border-radius:999px;padding:4px 12px;
     color:var(--accent);
-    opacity:.75;transition:opacity .18s;
   }
-  .step:hover .lives-in,.step:focus-within .lives-in{opacity:1}
+  .lives-in-detail{color:transparent;transition:color .22s ease}
+  .step:hover .lives-in-detail,.step:focus-within .lives-in-detail{color:var(--accent)}
 
   /* ---------- merged section parts ---------- */
   .section-part{
