@@ -1,5 +1,6 @@
-:root{
-    --paper:#FAF5EC;
+  :root{
+    --paper:#FCF9F7;
+    --nav-bg:#F5F0ED;
     --ink:#16382B;
     --ink-soft:#5F6F64;
     --leaf:#16382B;
@@ -39,7 +40,7 @@
     display:flex;flex-direction:column;
     padding:28px 0 24px 0;
     border-right:1.5px solid var(--line);
-    background:var(--paper);
+    background:var(--nav-bg);
     z-index:50;
   }
   .logo{
