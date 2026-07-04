@@ -11,7 +11,7 @@ Grant automation for nonprofits.
 ├── assets/
 │   ├── demo.mp4        Climate Resolve workflow demo
 │   └── team-photo.jpg  Team photo
-└── slides/             Climate Resolve presentation slides (add your JPGs here)
+└── slides/             Climate Resolve presentation slides
     ├── climate-resolve-1.jpg
     ├── climate-resolve-2.jpg
     ├── climate-resolve-3.jpg
