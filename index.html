@@ -20,11 +20,8 @@
   </a>
   <nav class="nav" aria-label="Sections">
     <a href="#story" class="nav-link">The story</a>
-    <a href="#demo" class="nav-link">Demo</a>
     <a href="#how" class="nav-link">How it works</a>
     <a href="#process" class="nav-link">Working with us</a>
-    <a href="#tools" class="nav-link">Your tools</a>
-    <a href="#math" class="nav-link">The math</a>
     <a href="#team" class="nav-link">Who we are</a>
     <a href="#start" class="nav-link">Get started</a>
   </nav>
@@ -73,7 +70,7 @@
         <p>Climate Resolve is an environmental nonprofit in Los Angeles. Their grant process lived across spreadsheets, inboxes, and a lot of late nights. Finding opportunities, checking fit, drafting applications, chasing deadlines. All of it by hand. In a full year of that, they got through 240 applications.</p>
         <p>We rebuilt the workflow inside the tools they already had. Airtable held the pipeline, Neon CRM held the relationships, and n8n and Zapier did the plumbing between them. No new logins, no training week, no "please adopt our platform" moment.</p>
         <p>The team kept working the way they always had. The busywork just stopped showing up.</p>
-        <p>That project is now in the running for a 2026 AMER Consulting Award, and it showed us something bigger: a lot of nonprofits are stuck in exactly the same place. Climate Resolve was the start. Scaling that impact is the whole point of AutoGrant.</p>
+        <p>That project is now in the running for a <a href="https://www.180dc.org/programs/global-consulting-awards" target="_blank" rel="noopener noreferrer">2026 AMER Consulting Award</a> from 180 Degrees Consulting, and it showed us something bigger: a lot of nonprofits are stuck in exactly the same place. Climate Resolve was the start. Scaling that impact is the whole point of AutoGrant.</p>
       </div>
       <div class="stats">
         <div class="stat">
@@ -93,18 +90,52 @@
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.8 14.2 7 21l5-2.6L17 21l-1.8-6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             In the running
           </p>
-          <p class="award-title">AMER Consulting Awards 2026</p>
-          <p class="lbl">Digital Strategy &amp; Transformation, for our work with Climate Resolve</p>
+          <p class="award-title"><a href="https://www.180dc.org/programs/global-consulting-awards" target="_blank" rel="noopener noreferrer">AMER Consulting Awards 2026</a></p>
+          <p class="lbl">180 Degrees Consulting Global Consulting Awards · Digital Strategy &amp; Transformation, for our work with Climate Resolve</p>
         </div>
       </div>
     </div>
+
+    <div class="section-part">
+      <h3>Grants are a volume game, and most teams can't play it</h3>
+      <p class="lede">Industry surveys put the average application success rate between 10 and 30 percent, and orgs that get six to ten applications out the door almost always land at least one award. Even great proposals lose most of the time. So the orgs that win more aren't writing one perfect application, they're consistently submitting good ones. That's exactly the part automation fixes.</p>
+      <div class="fact-row">
+        <div class="fact">
+          <p class="num">10-30%</p>
+          <p class="lbl">of grant applications get funded on average, per the Grant Professionals Association</p>
+        </div>
+        <div class="fact">
+          <p class="num">96%</p>
+          <p class="lbl">of orgs submitting 6 to 10 applications won at least one grant, per the State of Grantseeking survey</p>
+        </div>
+      </div>
+      <div class="calc">
+        <div class="calc-input">
+          <label for="apps-slider">Applications your team finishes in a month</label>
+          <p class="calc-value"><span id="apps-now">20</span><span> / month</span></p>
+          <input type="range" id="apps-slider" min="2" max="40" value="20" step="1"
+                 aria-describedby="calc-note">
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <div class="row">
+            <p class="big"><em id="apps-after">200</em> / month</p>
+            <p class="sub">throughput at the pace we hit with Climate Resolve</p>
+          </div>
+          <div class="row">
+            <p class="big"><em id="hours-back">96</em> hours</p>
+            <p class="sub">back per month, at a 60% cut in processing time</p>
+          </div>
+        </div>
+      </div>
+      <p class="calc-note" id="calc-note">These numbers come from what we measured at Climate Resolve, not a marketing model. Your results depend on your pipeline, and if automation won't move your numbers, we'll say so in the first call.</p>
+    </div>
   </section>
 
-  <!-- DEMO -->
-  <section id="demo" aria-label="Demo">
-    <p class="eyebrow">See it run</p>
-    <h2>Seven minutes of grant work, replayed in under two</h2>
-    <p class="lede">This is the full Climate Resolve workflow at 4x speed. Discovery, triage, drafting, tracking, all inside the tools they already had.</p>
+  <!-- HOW IT WORKS (demo + pipeline) -->
+  <section id="how" aria-label="How it works">
+    <p class="eyebrow">How it works</p>
+    <h2>We automate the pipeline, not the mission</h2>
+    <p class="lede">Four parts of grant work eat most of the hours. We take each one off your plate and drop the results where your team already looks.</p>
     <div class="demo-frame">
       <span class="demo-tab"><span class="dot" aria-hidden="true"></span>demo · 4x speed</span>
       <div class="demo-folder">
@@ -115,18 +146,11 @@
             aria-label="AutoGrant demo: automated grant workflow at Climate Resolve, played at 4x speed"></video>
         </div>
         <p class="demo-caption">
-          <span>recorded on the live Climate Resolve setup</span>
+          <span>The grant pipeline, on autopilot — recorded on the live Climate Resolve setup</span>
           <span>runs on a loop, tap for controls</span>
         </p>
       </div>
     </div>
-  </section>
-
-  <!-- HOW -->
-  <section id="how" aria-label="How it works">
-    <p class="eyebrow">How it works</p>
-    <h2>We automate the pipeline, not the mission</h2>
-    <p class="lede">Four parts of grant work eat most of the hours. We take each one off your plate and drop the results where your team already looks.</p>
     <div class="steps">
       <div class="step" tabindex="0">
         <h3>Discovery</h3>
@@ -152,10 +176,7 @@
     <p class="steps-hint">Hover any step to see where it lives. Hint: it's always somewhere you already are.</p>
   </section>
 
-
-  
-
-  <!-- PROCESS -->
+  <!-- WORKING WITH US (process + tools) -->
   <section id="process" aria-label="Working with us">
     <p class="eyebrow">Working with us</p>
     <h2>Built with you, not shipped to you</h2>
@@ -214,60 +235,22 @@
       </div>
       <p class="process-hint">Tip: each step syncs with its slide. Use the thumbnails or arrow keys to browse.</p>
     </div>
-  </section>
 
-<!-- TOOLS -->
-  <section id="tools" aria-label="Your tools">
-    <p class="eyebrow">The part that matters</p>
-    <h2>We don't hand you another platform</h2>
-    <p class="lede">Most grant software asks your team to move into a new system, and that's how nonprofits end up paying for tools nobody opens. AutoGrant works the other way around. We come to your stack, wire the automation into it, and leave your team doing the same work in the same places. It's just faster now.</p>
-    <div class="tools-wrap">
-      <span class="tool">Airtable</span>
-      <span class="tool">Neon CRM</span>
-      <span class="tool">Salesforce</span>
-      <span class="tool">Google Sheets</span>
-      <span class="tool">Gmail</span>
-      <span class="tool">Zapier</span>
-      <span class="tool">n8n</span>
-      <span class="tool">Notion</span>
-      <span class="tool you">+ whatever you already use</span>
-    </div>
-  </section>
-
-  <!-- MATH -->
-  <section id="math" aria-label="The math">
-    <p class="eyebrow">The math</p>
-    <h2>Grants are a volume game, and most teams can't play it</h2>
-    <p class="lede">Industry surveys put the average application success rate between 10 and 30 percent, and orgs that get six to ten applications out the door almost always land at least one award. Even great proposals lose most of the time. So the orgs that win more aren't writing one perfect application, they're consistently submitting good ones. That's exactly the part automation fixes.</p>
-    <div class="fact-row">
-      <div class="fact">
-        <p class="num">10-30%</p>
-        <p class="lbl">of grant applications get funded on average, per the Grant Professionals Association</p>
-      </div>
-      <div class="fact">
-        <p class="num">96%</p>
-        <p class="lbl">of orgs submitting 6 to 10 applications won at least one grant, per the State of GrantSeeking survey</p>
+    <div class="section-part">
+      <h3>We don't hand you another platform</h3>
+      <p class="lede">Most grant software asks your team to move into a new system, and that's how nonprofits end up paying for tools nobody opens. AutoGrant works the other way around. We come to your stack, wire the automation into it, and leave your team doing the same work in the same places. It's just faster now.</p>
+      <div class="tools-wrap">
+        <span class="tool">Airtable</span>
+        <span class="tool">Neon CRM</span>
+        <span class="tool">Salesforce</span>
+        <span class="tool">Google Sheets</span>
+        <span class="tool">Gmail</span>
+        <span class="tool">Zapier</span>
+        <span class="tool">n8n</span>
+        <span class="tool">Notion</span>
+        <span class="tool you">+ whatever you already use</span>
       </div>
     </div>
-    <div class="calc">
-      <div class="calc-input">
-        <label for="apps-slider">Applications your team finishes in a month</label>
-        <p class="calc-value"><span id="apps-now">20</span><span> / month</span></p>
-        <input type="range" id="apps-slider" min="2" max="40" value="20" step="1"
-               aria-describedby="calc-note">
-      </div>
-      <div class="calc-out" aria-live="polite">
-        <div class="row">
-          <p class="big"><em id="apps-after">200</em> / month</p>
-          <p class="sub">throughput at the pace we hit with Climate Resolve</p>
-        </div>
-        <div class="row">
-          <p class="big"><em id="hours-back">96</em> hours</p>
-          <p class="sub">back per month, at a 60% cut in processing time</p>
-        </div>
-      </div>
-    </div>
-    <p class="calc-note" id="calc-note">These numbers come from what we measured at Climate Resolve, not a marketing model. Your results depend on your pipeline, and if automation won't move your numbers, we'll say so in the first call.</p>
   </section>
 
   <!-- TEAM -->
@@ -303,197 +286,6 @@
   </footer>
 </main>
 
-
-<script>
-(function(){
-  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  /* ------- hero pace race -------
-     real pace: 240/yr ≈ 0.456/wk-hour... we scale time so the FAST lane
-     ticks every 0.9s (50/wk) and the slow lane at the true ratio.
-     ratio = 50 per week vs 240/52 per week = 50 / 4.615 ≈ 10.83          */
-  var fastEl = document.getElementById("count-fast");
-  var slowEl = document.getElementById("count-slow");
-  var fastChips = document.getElementById("chips-fast");
-  var slowChips = document.getElementById("chips-slow");
-  var FAST_MS = 900;
-  var SLOW_MS = Math.round(FAST_MS * (50 / (240/52)));  // ≈ 9750ms
-  var MAX_CHIPS = 24;
-
-  function tick(countEl, chipBox){
-    countEl.textContent = String(parseInt(countEl.textContent,10) + 1);
-    var chip = document.createElement("span");
-    chip.className = "chip";
-    chipBox.appendChild(chip);
-    if (chipBox.children.length > MAX_CHIPS) chipBox.removeChild(chipBox.firstChild);
-  }
-
-  if (reduced){
-    /* static end-state instead of animation */
-    fastEl.textContent = "50";
-    slowEl.textContent = "5";
-    document.getElementById("race-caption").textContent =
-      "In one week: about 5 applications by hand, 50 with AutoGrant.";
-    for (var i=0;i<20;i++){ var c=document.createElement("span");c.className="chip";fastChips.appendChild(c); }
-    for (var j=0;j<2;j++){ var d=document.createElement("span");d.className="chip";slowChips.appendChild(d); }
-  } else {
-    setInterval(function(){ tick(fastEl, fastChips); }, FAST_MS);
-    setInterval(function(){ tick(slowEl, slowChips); }, SLOW_MS);
-  }
-
-  /* ------- calculator ------- */
-  var slider = document.getElementById("apps-slider");
-  var nowEl = document.getElementById("apps-now");
-  var afterEl = document.getElementById("apps-after");
-  var hoursEl = document.getElementById("hours-back");
-  var MULTIPLIER = 10;      // Climate Resolve went ~10x on throughput
-  var HRS_PER_APP = 8;      // rough manual hours per application
-  var TIME_CUT = 0.6;       // 60% processing-time reduction
-
-  function updateCalc(){
-    var n = parseInt(slider.value,10);
-    nowEl.textContent = n;
-    afterEl.textContent = n * MULTIPLIER;
-    hoursEl.textContent = Math.round(n * HRS_PER_APP * TIME_CUT);
-  }
-  slider.addEventListener("input", updateCalc);
-  updateCalc();
-
-  /* ------- scroll reveal (progressive: classes added by JS only) ------- */
-  if (!reduced && "IntersectionObserver" in window){
-    var revealables = document.querySelectorAll(
-      ".step, .stat, .lane, .fact, .calc-input, .calc-out, .tools-wrap, .contact-card, .demo-frame, .team-frame, .process-wrap, .process-callout"
-    );
-    var revObs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){
-          e.target.classList.add("in");
-          revObs.unobserve(e.target);
-        }
-      });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
-    revealables.forEach(function(el){
-      el.classList.add("reveal");
-      revObs.observe(el);
-    });
-  }
-
-
-  /* ------- process explorer ------- */
-  var processData = [
-    {
-      title: "Initial diagnosis",
-      body: "<p>We walk through your current grant workflow end to end — discovery, triage, drafting, tracking, whatever your team actually does — and diagnose the main friction points together.</p><p>By the end, you'll have a shared map of where the hours go and which steps are worth automating first.</p>",
-      tag: "You stay in the room the whole time",
-      slide: "slides/climate-resolve-1.jpg",
-      fallback: "slides/climate-resolve-1.svg",
-      alt: "Climate Resolve presentation slide 1: Initial diagnosis"
-    },
-    {
-      title: "Wireframe & PRD",
-      body: "<p>We develop a software wireframe and create a PRD, then walk you through exactly how data flows between your tools — so nothing is mysterious before we build.</p><p>We recommend several options and automation tools for you to review. Nothing moves forward until you give your stamp of approval.</p>",
-      tag: "You approve before we build",
-      slide: "slides/climate-resolve-2.jpg",
-      fallback: "slides/climate-resolve-2.svg",
-      alt: "Climate Resolve presentation slide 2: Wireframe and PRD"
-    },
-    {
-      title: "Build, build, build",
-      body: "<p>Once you've signed off, we build. We meet with you at whatever cadence you prefer — weekly, biweekly, monthly — to demo progress, answer questions, and adjust if priorities shift.</p><p>You're never wondering what's happening behind the scenes. You see working pieces as they land.</p>",
-      tag: "Your cadence, your check-ins",
-      slide: "slides/climate-resolve-3.jpg",
-      fallback: "slides/climate-resolve-3.svg",
-      alt: "Climate Resolve presentation slide 3: Build phase"
-    },
-    {
-      title: "Hand-off",
-      body: "<p>We document the entire process and create a hand-off doc with troubleshooting guidance, so your team can maintain the system confidently.</p><p>And if something ends up awry down the road, we're always there. This isn't a one-and-done delivery — it's a partnership.</p>",
-      tag: "Full docs + ongoing support",
-      slide: "slides/climate-resolve-4.jpg",
-      fallback: "slides/climate-resolve-4.svg",
-      alt: "Climate Resolve presentation slide 4: Hand-off"
-    }
-  ];
-  var processIdx = 0;
-  var tabBtns = document.querySelectorAll(".process-step-btn");
-  var thumbBtns = document.querySelectorAll(".process-thumb");
-  var titleEl = document.getElementById("process-title");
-  var bodyEl = document.getElementById("process-body");
-  var tagEl = document.getElementById("process-tag");
-  var slideImg = document.getElementById("process-slide-img");
-  var counterEl = document.getElementById("process-counter");
-  var prevBtn = document.getElementById("process-prev");
-  var nextBtn = document.getElementById("process-next");
-  var panelEl = document.getElementById("process-panel");
-
-  function setProcessStep(i){
-    if (i < 0 || i >= processData.length) return;
-    processIdx = i;
-    var d = processData[i];
-    titleEl.textContent = d.title;
-    bodyEl.innerHTML = d.body;
-    tagEl.textContent = d.tag;
-    slideImg.dataset.fallback = "";
-    slideImg.onerror = function(){
-      if (d.fallback && !slideImg.dataset.fallback){
-        slideImg.dataset.fallback = "1";
-        slideImg.src = d.fallback;
-      }
-    };
-    slideImg.src = d.slide;
-    slideImg.alt = d.alt;
-    counterEl.textContent = "Slide " + (i + 1) + " of 4";
-    tabBtns.forEach(function(btn, j){
-      var on = j === i;
-      btn.setAttribute("aria-selected", on ? "true" : "false");
-      btn.tabIndex = on ? 0 : -1;
-    });
-    thumbBtns.forEach(function(btn, j){
-      btn.setAttribute("aria-selected", j === i ? "true" : "false");
-    });
-    if (panelEl) panelEl.setAttribute("aria-labelledby", "process-tab-" + i);
-    if (prevBtn) prevBtn.disabled = i === 0;
-    if (nextBtn) nextBtn.disabled = i === processData.length - 1;
-  }
-
-  tabBtns.forEach(function(btn){
-    btn.addEventListener("click", function(){ setProcessStep(parseInt(btn.dataset.step, 10)); });
-  });
-  thumbBtns.forEach(function(btn){
-    btn.addEventListener("click", function(){ setProcessStep(parseInt(btn.dataset.step, 10)); });
-  });
-  if (prevBtn) prevBtn.addEventListener("click", function(){ setProcessStep(processIdx - 1); });
-  if (nextBtn) nextBtn.addEventListener("click", function(){ setProcessStep(processIdx + 1); });
-
-  document.addEventListener("keydown", function(e){
-    if (!document.getElementById("process")) return;
-    var inView = document.getElementById("process").getBoundingClientRect();
-    if (inView.bottom < 0 || inView.top > window.innerHeight) return;
-    if (e.key === "ArrowLeft") { setProcessStep(processIdx - 1); e.preventDefault(); }
-    if (e.key === "ArrowRight") { setProcessStep(processIdx + 1); e.preventDefault(); }
-  });
-  setProcessStep(0);
-
-
-  /* ------- scrollspy ------- */
-  var links = Array.prototype.slice.call(document.querySelectorAll(".nav-link"));
-  var sections = links.map(function(l){ return document.querySelector(l.getAttribute("href")); });
-
-  function setActive(id){
-    links.forEach(function(l){
-      l.classList.toggle("active", l.getAttribute("href") === "#" + id);
-    });
-  }
-  if ("IntersectionObserver" in window){
-    var obs = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) setActive(e.target.id);
-      });
-    }, { rootMargin: "-35% 0px -55% 0px" });
-    sections.forEach(function(s){ if (s) obs.observe(s); });
-  }
-})();
-</script>
 <script src="js/main.js"></script>
 </body>
 </html>
